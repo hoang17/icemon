@@ -1,3 +1,9 @@
+/*
+  open terminal run:
+    browserify main.js > bundle.js
+  open index.html and check the log for test result
+*/
+
 // @flow
 'use strict';
 
