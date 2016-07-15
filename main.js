@@ -72,6 +72,7 @@ items.forEach(function (item) {
   });
 })
 
+
 console.log('********** TEST 2 CHECK TURN ONLY ************');
 
 items.forEach(function (item) {
@@ -87,11 +88,6 @@ items.forEach(function (item) {
   }
 })
 
-
-
-
-
-// ***********TODO ANOTHER CODE*************
 
 function checkTURNServer(turnConfig, timeout){
 
