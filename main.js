@@ -32,9 +32,11 @@ const iceServers = [
   	credential: 'youcal123',
   	username: 'jinnguyen019@gmail.com'
   },
-  {"username": "1468662679:iapprtc", "password": "mMYvGDbewgUIdlj7RfX3bDe/NV8=", "uris": ["turn:107.167.182.63:3478?transport=udp", "turn:107.167.182.63:3478?transport=tcp", "turn:107.167.182.63:3479?transport=udp","turn:107.167.182.63:3479?transport=tcp"]},
-  {"username": "1468674381:iapprtc", "password": "QUu3QCF+vXHHqy3+hQtkklcr5fg=", "uris": ["turn:104.199.130.130:3478?transport=udp", "turn:104.199.130.130:3478?transport=tcp", "turn:104.199.130.130:3479?transport=udp", "turn:104.199.130.130:3479?transport=tcp"]},
-  {"username": "1468675215:iapprtc", "password": "mMlk1O9Rkhz+DIrVPqd/xhDNSBo=", "uris": ["turn:107.167.189.134:3478?transport=udp", "turn:107.167.189.134:3478?transport=tcp", "turn:107.167.189.134:3479?transport=udp", "turn:107.167.189.134:3479?transport=tcp"]},
+  {
+    url: 'turn:numb.viagenie.ca',
+    credential: '123123',
+    username: 'lehuyhoang117@gmail.com'
+  },
   {"username": "1468675262:iapprtc", "password": "MO2bjVB6gCvSd6jlIAwlf+pK0cU=", "uris": ["turn:104.155.227.12:3478?transport=udp", "turn:104.155.227.12:3478?transport=tcp", "turn:104.155.227.12:3479?transport=udp", "turn:104.155.227.12:3479?transport=tcp"]},
 ]
 
@@ -45,7 +47,6 @@ var items = []
 for (var i = 0, len = iceServers.length; i < len; i++) {
   var item = iceServers[i]
   if (item.uris){
-    var ss = {}
     item.uris.forEach(function(url){
       items.push({
         username: item.username,

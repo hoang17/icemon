@@ -1,4 +1,10 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+/*
+  open terminal run:
+    browserify main.js > bundle.js
+  open index.html and check the log for test result
+*/
+
 // @flow
 'use strict';
 
@@ -27,10 +33,11 @@ const iceServers = [
   	credential: 'youcal123',
   	username: 'jinnguyen019@gmail.com'
   },
-  {"username": "1468662679:iapprtc", "password": "mMYvGDbewgUIdlj7RfX3bDe/NV8=", "uris": ["turn:107.167.182.63:3478?transport=udp", "turn:107.167.182.63:3478?transport=tcp", "turn:107.167.182.63:3479?transport=udp","turn:107.167.182.63:3479?transport=tcp"]},
-  {"username": "1468674381:iapprtc", "password": "QUu3QCF+vXHHqy3+hQtkklcr5fg=", "uris": ["turn:104.199.130.130:3478?transport=udp", "turn:104.199.130.130:3478?transport=tcp", "turn:104.199.130.130:3479?transport=udp", "turn:104.199.130.130:3479?transport=tcp"]},
-  {"username": "1468675215:iapprtc", "password": "mMlk1O9Rkhz+DIrVPqd/xhDNSBo=", "uris": ["turn:107.167.189.134:3478?transport=udp", "turn:107.167.189.134:3478?transport=tcp", "turn:107.167.189.134:3479?transport=udp", "turn:107.167.189.134:3479?transport=tcp"]},
-  {"username": "1468675262:iapprtc", "password": "MO2bjVB6gCvSd6jlIAwlf+pK0cU=", "uris": ["turn:104.155.227.12:3478?transport=udp", "turn:104.155.227.12:3478?transport=tcp", "turn:104.155.227.12:3479?transport=udp", "turn:104.155.227.12:3479?transport=tcp"]},
+  {
+    url: 'turn:numb.viagenie.ca',
+    credential: '123123',
+    username: 'lehuyhoang117@gmail.com'
+  },
 ]
 
 var stunturncheck = require('stunturncheck');
