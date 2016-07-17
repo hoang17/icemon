@@ -9,6 +9,7 @@
 'use strict';
 
 const iceServers = [
+  { url: 'stun:global.stun.twilio.com:3478?transport=udp' },
   {url: "stun:stun.l.google.com:19302"},
   {url:"stun:stun.services.mozilla.com"},
   {url:'stun:stun.ekiga.net'},
@@ -47,7 +48,6 @@ var items = []
 for (var i = 0, len = iceServers.length; i < len; i++) {
   var item = iceServers[i]
   if (item.uris){
-    var ss = {}
     item.uris.forEach(function(url){
       items.push({
         username: item.username,

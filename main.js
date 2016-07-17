@@ -8,6 +8,7 @@
 'use strict';
 
 const iceServers = [
+  { url: 'stun:global.stun.twilio.com:3478?transport=udp' },
   {url: "stun:stun.l.google.com:19302"},
   {url:"stun:stun.services.mozilla.com"},
   {url:'stun:stun.ekiga.net'},
@@ -37,7 +38,6 @@ const iceServers = [
     credential: '123123',
     username: 'lehuyhoang117@gmail.com'
   },
-  {"username": "1468675262:iapprtc", "password": "MO2bjVB6gCvSd6jlIAwlf+pK0cU=", "uris": ["turn:104.155.227.12:3478?transport=udp", "turn:104.155.227.12:3478?transport=tcp", "turn:104.155.227.12:3479?transport=udp", "turn:104.155.227.12:3479?transport=tcp"]},
 ]
 
 var stunturncheck = require('stunturncheck');
